@@ -1,4 +1,4 @@
-# harbour-context-skeleton
+# Harbour context skeleton
 
 Template repo for your private `harbour-context`.
 
@@ -10,23 +10,26 @@ It is intentionally unopinionated. Keep what fits your workflow and change what 
 
 ## Getting started
 
-- Create a new `harbour-context` directory from this repo
+1. Fork `harbour-context-skeleton`
+
+2. Clone your fork
 
 ```sh
-git clone --depth 1 git@github.com:agent-harbour/harbour-context-skeleton.git harbour-context
-rm -rf harbour-context/.git
+git clone --depth 1 git@github.com:your-user/harbour-context-skeleton.git my-harbour-context
 ```
 
-- Configure `runtime.env`
+3. Update `AGENTS.md`
 
-`WORKSPACE_ROOT` is the workspace path on the host. The same path is mounted
-inside the VM.
+4. Update `repos.yaml` with the repo `host_path` entries you want mounted
 
-```sh
-WORKSPACE_ROOT=/Users/your-user/git
-```
+5. Remove `skills/example-skill/`
 
-- Update `repos.yaml` with the repos you want mounted
-- Remove `skills/example-skill/`
-- Add your own skills under `skills/`
-- Commit it as your own repo if you want to keep your context in Git
+6. Add your own skills under `skills/`
+
+7. Run `make provision` from Harbour
+
+Harbour will prompt for:
+
+- `HARBOUR_CONTEXT_HOST_PATH`
+- `HARBOUR_WORKSPACE_ROOT`
+- `codex` or `claude`
