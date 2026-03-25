@@ -12,7 +12,7 @@ Repos may be nested under directories such as `your-name/` or `company/`.
 
 # Terminology
 
-- `Root AGENTS.md` means the `AGENTS.md` at `WORKSPACE_ROOT`
+- `Root AGENTS.md` means the `AGENTS.md` at `HARBOUR_WORKSPACE_ROOT`
 - Repo-specific `AGENTS.md` files define policy for a single repo
 - Repo-specific `CLAUDE.md` files should be treated the same as repo-specific `AGENTS.md`
 - Root skills live under `harbour-context/skills` and apply across the workspace
