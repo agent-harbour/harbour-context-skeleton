@@ -1,21 +1,21 @@
-# Harbour context skeleton
+# Harbour harness template
 
-Template repo for your private `harbour-context`.
+Template repo for your private `harbour-harness`.
 
-This skeleton is intended to be edited.
+This template is intended to be edited.
 
-Replace the placeholder paths, add your own skills, and commit the result as your own private context repo.
+Replace the placeholder paths, add your own skills, and commit the result as your own private harness repo.
 
 It is intentionally unopinionated. Keep what fits your workflow and change what does not.
 
 ## Getting started
 
-1. Fork `harbour-context-skeleton`
+1. Fork `harbour-harness-template`
 
 2. Clone your fork
 
 ```sh
-git clone --depth 1 git@github.com:your-user/harbour-context-skeleton.git my-harbour-context
+git clone --depth 1 git@github.com:your-user/harbour-harness-template.git my-harbour-harness
 ```
 
 3. Update `AGENTS.md`
@@ -26,10 +26,10 @@ git clone --depth 1 git@github.com:your-user/harbour-context-skeleton.git my-har
 
 6. Add your own skills under `skills/`
 
-7. Run `make provision` from Harbour
+7. Run `harbour provision`
 
 Harbour will prompt for:
 
-- `HARBOUR_CONTEXT_HOST_PATH`
+- `HARBOUR_HARNESS_PATH`
 - `HARBOUR_WORKSPACE_ROOT`
 - `codex` or `claude`
