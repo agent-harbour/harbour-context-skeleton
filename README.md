@@ -30,6 +30,7 @@ git clone --depth 1 git@github.com:your-user/harbour-harness-template.git my-har
 
 Harbour will prompt for:
 
-- `HARBOUR_HARNESS_PATH`
-- `HARBOUR_WORKSPACE_ROOT`
-- `codex` or `claude`
+- Path to your harness
+- Workspace root
+- Agent to provision
+- The default `harbour` command
