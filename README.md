@@ -22,6 +22,17 @@ git clone --depth 1 git@github.com:your-user/harbour-context-skeleton.git my-har
 
 4. Update `repos.yaml` with the repo `host_path` entries you want mounted
 
+   Example:
+
+   ```yaml
+   repos:
+     - host_path: ./your-org/frontend
+     - host_path: ./your-org/backend
+     - host_path: ./your-org/lambdas
+   ```
+
+   Relative `host_path` values are resolved from the `workspace_root` you enter during `harbour provision`
+
 5. Remove `skills/example-skill/`
 
 6. Add your own skills under `skills/`

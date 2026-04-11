@@ -1,4 +1,4 @@
 repos:
-  - host_path: /Users/your-user/git/your-org/backend
-  - host_path: /Users/your-user/git/your-org/frontend
-  - host_path: /Users/your-user/git/your-org/lambdas
+  - host_path: ./your-org/frontend
+  - host_path: ./your-org/backend
+  - host_path: ./your-org/lambdas
